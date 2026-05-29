@@ -12,3 +12,8 @@ while True :
     rate(100)
     x.color = vec(random.random(),random.random(),random.random())
     y.color = vec(random.random(),random.random(),random.random())
+    k = keysdown()
+    if ' ' in k:
+        z.pos.x = random.uniform(-5, 5)
+        z.pos.y = random.uniform(-5, 5)
+        z.trail_color = y.color
